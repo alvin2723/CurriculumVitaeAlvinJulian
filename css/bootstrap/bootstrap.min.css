@@ -164,7 +164,7 @@ a {
   -webkit-text-decoration-skip: objects;
 }
 a:hover {
-  color: #0056b3;
+  color: #fff;
   text-decoration: none;
 }
 a:not([href]):not([tabindex]) {
@@ -2428,8 +2428,8 @@ fieldset:disabled a.btn {
 }
 .btn-secondary {
   color: #fff;
-  background-color: #888;
-  border-color: #888;
+  background-color: #6c757d;
+  border-color: #6c757d;
 }
 .btn-secondary:hover {
   color: #fff;
@@ -2443,8 +2443,8 @@ fieldset:disabled a.btn {
 .btn-secondary.disabled,
 .btn-secondary:disabled {
   color: #fff;
-  background-color: #888;
-  border-color: #888;
+  background-color: #6c757d;
+  border-color: #6c757d;
 }
 .btn-secondary:not(:disabled):not(.disabled).active,
 .btn-secondary:not(:disabled):not(.disabled):active,
@@ -3624,23 +3624,13 @@ tbody.collapse.show {
   margin-bottom: 0;
   list-style: none;
 }
-.nav-item{
-  padding: 0 10px;
-}
-.nav-item:hover{
-   background-color: rgba(222, 222, 222, 0.425);
-   border-radius: 25px;
- 
-}
 .nav-link {
   display: block;
-  padding: 0.625rem 1rem;
+  padding: 0.5rem 1rem;
 }
 .nav-link:focus,
 .nav-link:hover {
   text-decoration: none;
-  color: #fff;
-  font-weight: 500;
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -3676,45 +3666,40 @@ tbody.collapse.show {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-
-.nav-pills{
+.nav-pills {
   display: inline-flex;
 }
 
-.nav-pills .nav-item{
-  padding:0;
-  margin-right:19px;
+.nav-pills .nav-item {
+  padding: 0;
+  margin-right: 19px;
 }
 
-
-.nav-pills .nav-item .nav-link{
-  padding:0 15px;
+.nav-pills .nav-item .nav-link {
+  padding: 0 15px;
   height: 60px;
   width: 60px;
   font-weight: 400;
   border-radius: 30px;
   color: #9a9a;
   background-color: rgba(222, 222, 222, 0.3);
-
 }
 .nav-pills .nav-item .nav-link.active {
   color: #fff;
-  background-color: #007bff;
+  background-color: #11d6f0;
 }
 
 .nav-pills .nav-item .nav-link.active:hover {
-  padding:0 15px;
+  padding: 0 15px;
   color: #fff;
-  background-color: #007bff;
+  background-color: #11d6f0;
 }
 
-.nav-pills .nav-item i{
-  
+.nav-pills .nav-item i {
   display: block;
-  font-size:20px;
+  font-size: 20px;
   line-height: 60px;
 }
-
 .nav-fill .nav-item {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
@@ -3775,8 +3760,6 @@ tbody.collapse.show {
 }
 .navbar-brand:focus,
 .navbar-brand:hover {
-  font-weight: 600;
-  color: #fff;
   text-decoration: none;
 }
 .navbar-nav {
@@ -3795,7 +3778,6 @@ tbody.collapse.show {
   padding-right: 0;
   padding-left: 0;
 }
-
 .navbar-nav .dropdown-menu {
   position: static;
   float: none;
@@ -3822,6 +3804,8 @@ tbody.collapse.show {
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 0.25rem;
+  color: #fff;
+  font-weight: bolder;
 }
 .navbar-toggler:focus,
 .navbar-toggler:hover {
@@ -3838,6 +3822,7 @@ tbody.collapse.show {
   content: "";
   background: no-repeat center center;
   background-size: 100% 100%;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 @media (max-width: 575.98px) {
   .navbar-expand-sm > .container,
@@ -3948,6 +3933,11 @@ tbody.collapse.show {
   }
 }
 @media (max-width: 991.98px) {
+  .navbar-collapse {
+    text-align: left;
+    background: #11d6f0;
+  }
+
   .navbar-expand-lg > .container,
   .navbar-expand-lg > .container-fluid {
     padding-right: 0;
@@ -4269,14 +4259,7 @@ tbody.collapse.show {
   right: 0;
   bottom: 0;
   left: 0;
-  height: 320px;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background: rgba(0, 0, 0, 0.5);
-}
-.card:hover .card-img-overlay {
-  opacity: 1;
+  padding: 1.25rem;
 }
 .card-img {
   width: 100%;
@@ -4287,7 +4270,6 @@ tbody.collapse.show {
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
 }
-
 .card-img-bottom {
   width: 100%;
   border-bottom-right-radius: calc(0.25rem - 1px);
@@ -4794,7 +4776,6 @@ tbody.collapse.show {
   font-size: 0.75rem;
   background-color: #e9ecef;
   border-radius: 0.25rem;
-  margin-top:10px;
 }
 .progress-bar {
   display: -webkit-box;
@@ -8158,9 +8139,6 @@ button.bg-dark:hover {
 }
 .text-center {
   text-align: center !important;
-}
-.text-decoration-none{
-  text-decoration: none;
 }
 @media (min-width: 576px) {
   .text-sm-left {
