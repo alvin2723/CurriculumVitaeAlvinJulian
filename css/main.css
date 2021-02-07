@@ -147,12 +147,9 @@ strong {
   text-transform: uppercase;
 }
 
-.main-container .progress-content .progress .progress-value {
+.main-container .progress-content .progress-level {
   font-size: 0.875rem;
-  font-weight: 700;
-  position: absolute;
-  top: 2px;
-  right: 0;
+  color: #11d6f0;
 }
 
 .main-container .timeline-edu ul {
